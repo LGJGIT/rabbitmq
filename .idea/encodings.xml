@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$/rabbitmq-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-spring2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-springboot-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-springboot-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

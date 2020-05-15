@@ -3,9 +3,10 @@ package com.bfxy.rabbitmq.api.limit;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
 
+/**
+ * 消费端限流
+ */
 public class Consumer {
 
 	
@@ -13,7 +14,7 @@ public class Consumer {
 		
 		
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -30,9 +31,8 @@ public class Consumer {
 		channel.queueBind(queueName, exchangeName, routingKey);
 		
 		//1 限流方式  第一件事就是 autoAck设置为 false
-		
 		channel.basicQos(0, 1, false);
-		
+		//autoAck需设置为false
 		channel.basicConsume(queueName, false, new MyConsumer(channel));
 		
 		

@@ -1,21 +1,20 @@
 package com.bfxy.rabbitmq.api.message;
 
-import java.util.Map;
 
+import com.bfxy.rabbitmq.api.consumer.MyConsumer;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Envelope;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
-
+/**
+ * message及其相关属性和自定义属性
+ */
 public class Consumer {
 
 	public static void main(String[] args) throws Exception {
 		
 		//1 创建一个ConnectionFactory, 并进行配置
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -28,23 +27,11 @@ public class Consumer {
 		//4 声明（创建）一个队列
 		String queueName = "test001";
 		channel.queueDeclare(queueName, true, false, false, null);
-		
 		//5 创建消费者
-		QueueingConsumer queueingConsumer = new QueueingConsumer(channel);
+		MyConsumer consumer = new MyConsumer(channel);
 		
 		//6 设置Channel
-		channel.basicConsume(queueName, true, queueingConsumer);
-		
-		while(true){
-			//7 获取消息
-			Delivery delivery = queueingConsumer.nextDelivery();
-			String msg = new String(delivery.getBody());
-			System.err.println("消费端: " + msg);
-			Map<String, Object> headers = delivery.getProperties().getHeaders();
-			System.err.println("headers get my1 value: " + headers.get("my1"));
-			
-			//Envelope envelope = delivery.getEnvelope();
-		}
-		
+		channel.basicConsume(queueName, true, consumer);
+
 	}
 }

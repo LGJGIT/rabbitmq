@@ -4,6 +4,11 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+/**
+ * 可以使用通配符进行模糊匹配
+ * #：匹配一个或这多个词
+ * *：匹配不多不少一个词
+ */
 public class Producer4TopicExchange {
 
 	
@@ -11,7 +16,7 @@ public class Producer4TopicExchange {
 		
 		//1 创建ConnectionFactory
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		

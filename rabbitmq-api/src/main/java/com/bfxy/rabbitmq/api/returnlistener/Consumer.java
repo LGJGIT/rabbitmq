@@ -1,11 +1,13 @@
 package com.bfxy.rabbitmq.api.returnlistener;
 
+import com.bfxy.rabbitmq.api.consumer.MyConsumer;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
 
+/**
+ * return listener机制
+ */
 public class Consumer {
 
 	
@@ -13,7 +15,7 @@ public class Consumer {
 		
 		
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -28,20 +30,9 @@ public class Consumer {
 		channel.queueDeclare(queueName, true, false, false, null);
 		channel.queueBind(queueName, exchangeName, routingKey);
 		
-		QueueingConsumer queueingConsumer = new QueueingConsumer(channel);
+		MyConsumer consumer = new MyConsumer(channel);
 		
-		channel.basicConsume(queueName, true, queueingConsumer);
-		
-		while(true){
-			
-			Delivery delivery = queueingConsumer.nextDelivery();
-			String msg = new String(delivery.getBody());
-			System.err.println("消费者: " + msg);
-		}
-		
-		
-		
-		
+		channel.basicConsume(queueName, true, consumer);
 		
 	}
 }

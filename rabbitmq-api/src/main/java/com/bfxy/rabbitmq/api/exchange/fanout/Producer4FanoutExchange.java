@@ -4,6 +4,12 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+/**
+ * 不处理路由键，只需要简单的将队列绑定到交换机上；
+ * 发送到交换机的消息都会被转发到与该交换机绑定的所有队列上
+ * fanout交换机转发消息是最快的
+ * @author lvguojun
+ */
 public class Producer4FanoutExchange {
 
 	
@@ -11,7 +17,7 @@ public class Producer4FanoutExchange {
 		
 		//1 创建ConnectionFactory
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		

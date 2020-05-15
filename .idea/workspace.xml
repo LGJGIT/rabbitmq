@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="973583e4-c01d-4133-a335-cdc1f629c946" name="Default" comment="" />
+    <list default="true" id="973583e4-c01d-4133-a335-cdc1f629c946" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/RabbitmqSpring2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/adapter/MessageDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/ConverterBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/ImageMessageConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/PDFMessageConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/TextMessageConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/entity/Packaged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-spring2/src/test/java/com/lgj/rabbitmq/RabbitmqSpring2ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/MyConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Consumer4DirectExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Consumer4DirectExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Producer4DirectExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Producer4DirectExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Consumer4FanoutExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Consumer4FanoutExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Producer4FanoutExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Producer4FanoutExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Consumer4TopicExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Consumer4TopicExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Producer4TopicExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Producer4TopicExchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Procuder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Procuder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Procuder.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Procuder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-springboot-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-springboot-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-springboot-producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-springboot-producer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-springcloudstream-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-springcloudstream-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-springcloudstream-producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-springcloudstream-producer/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/rabbitmq-spring/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-api/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-springboot-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-springboot-producer/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-spring2/target/" />
+    <ignored path="$PROJECT_DIR$/rabbitmq-springboot-producer-1/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +62,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RabbitMQConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RabbitAdmin.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/1.7.8.RELEASE/spring-rabbit-1.7.8.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -33,79 +75,102 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="289">
+                <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitializingBean.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/entity/Order.java">
+      <file leaf-file-name="test.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/docs/test.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Packaged.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/entity/Packaged.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="111">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
+      <file leaf-file-name=".springBeans" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/.springBeans">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="111">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="220">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageDelegate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/adapter/MessageDelegate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConverterBody.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/ConverterBody.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RabbitMqConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/config/RabbitMqConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>192.168.11.76</find>
+      <find>59.110.236.239</find>
+      <find>afterPropertiesSet</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>59.110.236.239</replace>
+      <replace>localhost</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,7 +178,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/quickstart/Procuder.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Producer4DirectExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/direct/Consumer4DirectExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Consumer4TopicExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Producer4TopicExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Producer4FanoutExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Consumer4FanoutExchange.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Procuder.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/message/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Producer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/confirm/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/returnlistener/Producer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/consumer/MyConsumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/limit/MyConsumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/RabbitMqConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/entity/Packaged.java" />
         <option value="$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/TextMessageConverter.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/adapter/MessageDelegate.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/test/java/com/lgj/rabbitmq/RabbitmqSpring2ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Consumer.java" />
+        <option value="$PROJECT_DIR$/rabbitmq-api/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/config/RabbitMqConfig.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/rabbitmq-springboot-producer-1/pom.xml" />
       </list>
     </option>
   </component>
@@ -144,7 +241,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rabbitmq-spring2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rabbitmq-spring2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -172,20 +279,116 @@
             <path>
               <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bfxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bfxy" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq-springboot-producer-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.rabbitmq:amqp-client:5.7.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.rabbitmq:amqp-client:5.7.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="amqp-client-5.7.3.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.rabbitmq:amqp-client:5.7.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="amqp-client-5.7.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.rabbitmq:amqp-client:5.7.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="amqp-client-5.7.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -200,6 +403,11 @@
     <property name="project.structure.side.proportion" value="0.4632184" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -212,9 +420,100 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RabbitmqSpring2ApplicationTests.testSendMessage">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bfxy.rabbitmq.api.dlx.Consumer" />
+      <module name="rabbitmq-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bfxy.rabbitmq.api.dlx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bfxy.rabbitmq.api.dlx.Producer" />
+      <module name="rabbitmq-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bfxy.rabbitmq.api.dlx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="RabbitmqSpring2ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-spring2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lgj.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lgj.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.lgj.rabbitmq.RabbitmqSpring2ApplicationTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-spring2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lgj.rabbitmq.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lgj.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.lgj.rabbitmq.RabbitmqSpring2ApplicationTests" />
+      <option name="METHOD_NAME" value="testRabbitAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RabbitmqSpring2ApplicationTests.testSendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-spring2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lgj.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lgj.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.lgj.rabbitmq.RabbitmqSpring2ApplicationTests" />
+      <option name="METHOD_NAME" value="testSendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -232,9 +531,21 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfxy.rabbitmq.Application" />
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq-springboot-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfxy.springboot.Application" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="rabbitmq-spring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bfxy.spring.Application" />
+    </configuration>
+    <configuration name="RabbitmqSpring2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq-spring2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lgj.rabbitmq.RabbitmqSpring2Application" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -258,6 +569,26 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
+      <item itemvalue="Spring Boot.Application (2)" />
+      <item itemvalue="Spring Boot.RabbitmqSpring2Application" />
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests.testRabbitAdmin" />
+      <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests" />
+      <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests.testSendMessage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests.testSendMessage" />
+        <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests" />
+        <item itemvalue="JUnit.RabbitmqSpring2ApplicationTests.testRabbitAdmin" />
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Consumer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -270,44 +601,76 @@
       <option name="presentableId" value="Default" />
       <updated>1585122701370</updated>
       <workItem from="1585122703144" duration="1589000" />
-      <workItem from="1585227243948" duration="3555000" />
+      <workItem from="1585227243948" duration="6266000" />
+      <workItem from="1586610681152" duration="24000" />
+      <workItem from="1588422948976" duration="3027000" />
+      <workItem from="1588512889089" duration="14158000" />
+      <workItem from="1588575406189" duration="7474000" />
+      <workItem from="1589551087341" duration="1513000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="RabbitmqSpring2ApplicationTests_testRabbitAdmin - 2020.05.04 at 15h 16m 55s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests_testRabbitAdmin - 2020.05.04 at 15h 18m 30s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests_testRabbitAdmin - 2020.05.04 at 15h 23m 06s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests_testRabbitAdmin - 2020.05.04 at 15h 29m 10s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests_testRabbitAdmin - 2020.05.04 at 15h 32m 50s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testRabbitAdmin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests - 2020.05.04 at 15h 44m 28s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqSpring2ApplicationTests_testSendMessage - 2020.05.04 at 15h 55m 23s.xml">
+      <configuration name="RabbitmqSpring2ApplicationTests.testSendMessage" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5144000" />
+    <option name="totallyTimeSpent" value="34051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19527897" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32965517" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32965517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -319,182 +682,370 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/config/RabbitMqConfig.java</url>
+          <line>108</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE.jar!/org/springframework/amqp/rabbit/connection/ConnectionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="102">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/Application.java">
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/DirectExchange.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="204">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE-sources.jar!/org/springframework/amqp/core/DirectExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE-sources.jar!/org/springframework/amqp/core/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/RabbitmqSpring2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/spring-beans/5.2.5.RELEASE/spring-beans-5.2.5.RELEASE.jar!/org/springframework/beans/factory/InitializingBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/spring-beans/5.2.5.RELEASE/spring-beans-5.2.5.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="494" column="25" lean-forward="true" selection-start-line="494" selection-start-column="25" selection-end-line="494" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/entity/Packaged.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="43" column="56" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+        <state relative-caret-position="-1336">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/test/java/com/bfxy/spring/ApplicationTests.java">
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE-sources.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="357">
+          <caret line="350" column="16" selection-start-line="350" selection-start-column="16" selection-end-line="350" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE-sources.jar!/org/springframework/amqp/support/converter/MessageConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="393">
+          <caret line="59" column="42" lean-forward="true" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/Application.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/PDFMessageConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="221">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-amqp/1.7.8.RELEASE/spring-amqp-1.7.8.RELEASE.jar!/org/springframework/amqp/core/Binding.class">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/TextMessageConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        <state relative-caret-position="53">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/test/java/com/bfxy/spring/ApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/adapter/MessageDelegate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/ConverterBody.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/ConverterBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/ImageMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/convert/ImageMessageConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/PDFMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/test/java/com/bfxy/spring/ApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="258">
+          <caret line="210" column="5" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="210" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/TextMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/test/java/com/lgj/rabbitmq/RabbitmqSpring2ApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="214">
+          <caret line="189" column="36" lean-forward="true" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/entity/Order.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer/src/main/java/com/bfxy/springboot/MainConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/entity/Packaged.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="388">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/Application.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer/src/main/java/com/bfxy/springboot/producer/RabbitSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/src/main/java/com/bfxy/springboot/MainConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/src/main/java/com/bfxy/springboot/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/ack/Consumer.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/src/main/java/com/bfxy/springboot/config/database/DruidDataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/src/main/java/com/bfxy/springboot/config/database/BaseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/RabbitMQConfig.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer/src/test/java/com/bfxy/springboot/ApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE.jar!/org/springframework/beans/factory/InitializingBean.class">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/MyConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/dlx/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../maven/repo/com/rabbitmq/amqp-client/5.7.3/amqp-client-5.7.3-sources.jar!/com/rabbitmq/client/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="584" column="36" selection-start-line="584" selection-start-column="36" selection-end-line="584" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="true" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/fanout/Consumer4FanoutExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/src/main/java/com/bfxy/rabbitmq/api/exchange/topic/Consumer4TopicExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/adapter/MessageDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/src/main/java/com/lgj/rabbitmq/config/RabbitMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/adapter/MessageDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/src/main/java/com/bfxy/spring/convert/ConverterBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/spring-beans/4.3.18.RELEASE/spring-beans-4.3.18.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="111">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/1.7.8.RELEASE/spring-rabbit-1.7.8.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.class">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-spring/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../maven/repo/org/springframework/amqp/spring-rabbit/1.7.8.RELEASE/spring-rabbit-1.7.8.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+        <state relative-caret-position="220">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="289">
+            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-consumer/.gitignore">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/docs/test.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/.springBeans">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-springboot-producer-1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>

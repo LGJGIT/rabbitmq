@@ -10,7 +10,7 @@ public class Procuder {
 	public static void main(String[] args) throws Exception {
 		//1 创建一个ConnectionFactory, 并进行配置
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("127.0.0.1");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -26,7 +26,6 @@ public class Procuder {
 			//1 exchange   2 routingKey
 			channel.basicPublish("", "test001", null, msg.getBytes());
 		}
-
 		//5 记得要关闭相关的连接
 		channel.close();
 		connection.close();

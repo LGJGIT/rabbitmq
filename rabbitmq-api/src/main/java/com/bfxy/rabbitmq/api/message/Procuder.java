@@ -8,13 +8,16 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+/**
+ * message及其相关属性和自定义属性
+ */
 public class Procuder {
 
 	
 	public static void main(String[] args) throws Exception {
 		//1 创建一个ConnectionFactory, 并进行配置
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		

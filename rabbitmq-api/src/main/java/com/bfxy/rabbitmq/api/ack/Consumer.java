@@ -3,9 +3,10 @@ package com.bfxy.rabbitmq.api.ack;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
 
+/**
+ * 消费端的ACK与重回队列
+ */
 public class Consumer {
 
 	
@@ -13,7 +14,7 @@ public class Consumer {
 		
 		
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		

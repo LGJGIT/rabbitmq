@@ -1,18 +1,23 @@
 package com.bfxy.rabbitmq.api.exchange.fanout;
 
+import com.bfxy.rabbitmq.api.consumer.MyConsumer;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.QueueingConsumer.Delivery;
 
+/**
+ * 不处理路由键，只需要简单的将队列绑定到交换机上；
+ * 发送到交换机的消息都会被转发到与该交换机绑定的所有队列上
+ * fanout交换机转发消息是最快的
+ * @author lvguojun
+ */
 public class Consumer4FanoutExchange {
 
 	public static void main(String[] args) throws Exception {
 		
         ConnectionFactory connectionFactory = new ConnectionFactory() ;  
         
-        connectionFactory.setHost("192.168.11.76");
+        connectionFactory.setHost("localhost");
         connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -25,21 +30,15 @@ public class Consumer4FanoutExchange {
 		String exchangeName = "test_fanout_exchange";
 		String exchangeType = "fanout";
 		String queueName = "test_fanout_queue";
-		String routingKey = "";	//不设置路由键
+		//不设置路由键
+		String routingKey = "";
 		channel.exchangeDeclare(exchangeName, exchangeType, true, false, false, null);
 		channel.queueDeclare(queueName, false, false, false, null);
 		channel.queueBind(queueName, exchangeName, routingKey);
 		
         //durable 是否持久化消息
-        QueueingConsumer consumer = new QueueingConsumer(channel);
+        MyConsumer consumer = new MyConsumer(channel);
         //参数：队列名称、是否自动ACK、Consumer
         channel.basicConsume(queueName, true, consumer); 
-        //循环获取消息  
-        while(true){  
-            //获取消息，如果没有消息，这一步将会一直阻塞  
-            Delivery delivery = consumer.nextDelivery();  
-            String msg = new String(delivery.getBody());    
-            System.out.println("收到消息：" + msg);  
-        } 
 	}
 }

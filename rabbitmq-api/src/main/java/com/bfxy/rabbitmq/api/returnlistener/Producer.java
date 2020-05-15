@@ -9,6 +9,9 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.ReturnListener;
 import com.rabbitmq.client.AMQP.BasicProperties;
 
+/**
+ * return listener机制
+ */
 public class Producer {
 
 	
@@ -16,7 +19,7 @@ public class Producer {
 		
 		
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		connectionFactory.setHost("192.168.11.76");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setPort(5672);
 		connectionFactory.setVirtualHost("/");
 		
@@ -46,9 +49,9 @@ public class Producer {
 		});
 		
 		
-		channel.basicPublish(exchange, routingKeyError, true, null, msg.getBytes());
+//		channel.basicPublish(exchange, routingKey, true, null, msg.getBytes());
 		
-		//channel.basicPublish(exchange, routingKeyError, true, null, msg.getBytes());
+		channel.basicPublish(exchange, routingKeyError, true, null, msg.getBytes());
 		
 		
 		

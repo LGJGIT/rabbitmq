@@ -25,6 +25,7 @@ import com.bfxy.spring.convert.ImageMessageConverter;
 import com.bfxy.spring.convert.PDFMessageConverter;
 import com.bfxy.spring.convert.TextMessageConverter;
 
+@SuppressWarnings("all")
 @Configuration
 @ComponentScan({"com.bfxy.spring.*"})
 public class RabbitMQConfig {
@@ -32,13 +33,19 @@ public class RabbitMQConfig {
 	@Bean
 	public ConnectionFactory connectionFactory(){
 		CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
-		connectionFactory.setAddresses("59.110.236.239");
+		connectionFactory.setAddresses("localhost");
+		connectionFactory.setHost("localhost");
 		connectionFactory.setUsername("guest");
 		connectionFactory.setPassword("guest");
 		connectionFactory.setVirtualHost("/");
 		return connectionFactory;
 	}
-	
+
+	/**
+	 * RabbitAdmin类可以很好的操作RabbitMQ，在spring中直接注入即可
+	 * @param connectionFactory
+	 * @return
+	 */
 	@Bean
 	public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
 		RabbitAdmin rabbitAdmin = new RabbitAdmin(connectionFactory);
@@ -62,8 +69,8 @@ public class RabbitMQConfig {
     }  
 
     @Bean  
-    public Queue queue001() {  
-        return new Queue("queue001", true); //队列持久  
+    public Queue queue001() {
+        return new Queue("queue001", true); //队列持久
     }  
     
     @Bean  
@@ -239,18 +246,4 @@ public class RabbitMQConfig {
     	return container;
     	
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	
-	
-	
 }
